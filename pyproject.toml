@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "data-scraping-python"
+version = "0.1.0"
+description = ""
+authors = ["Piyush Gambhir <90608533+piyush-gambhir@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+    { include = "scrapers" },
+    { include = "helpers" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+pyppeteer = "^2.0.0"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+scrapy = "^2.11.2"
+selenium = "^4.25.0"
+lxml = "^5.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

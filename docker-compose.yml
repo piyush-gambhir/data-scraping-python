@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  scraper:
+    build: .
+    container_name: python_scraper
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+    volumes:
+      - .:/usr/src/app  # Mount the current directory to the container
+    networks:
+      - scraper_network
+    # Uncomment below if you need access to the display (for testing)
+    # and ensure you're using Chrome in non-headless mode
+    # devices:
+    #   - /dev/shm:/dev/shm
+    depends_on:
+      - chrome
+    command: poetry run python your_scraper_script.py
+
+  chrome:
+    image: selenium/standalone-chrome  # Using the official Selenium Chrome image
+    container_name: chrome_browser
+    networks:
+      - scraper_network
+    shm_size: 2gb  # Optional: To avoid Chrome crashes on resource-heavy sites
+
+networks:
+  scraper_network:
+    driver: bridge
