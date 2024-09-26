@@ -1,5 +1,6 @@
 import re
-from web_scraping import fetch_html_content_using_requests, fetch_html_content_using_selenium, get_website_base_url
+
+from helpers.url.url import parse_url
 
 PROVIDER_LIST = [
     'Dealer.com', 'DealerInspire', 'DealerOn', 'DealerSocket', 'DealerFire',

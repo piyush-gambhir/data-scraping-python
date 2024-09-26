@@ -1,6 +1,20 @@
 from urllib.parse import urlparse, urlunparse, urlencode, parse_qs, urljoin, quote, unquote
 
 
+def is_valid_url(url):
+    """
+    Checks if a URL is valid and properly formatted.
+
+    Args:
+        url (str): The URL to check.
+
+    Returns:
+        bool: True if the URL is valid, False otherwise.
+    """
+    parsed = urlparse(url)
+    return bool(parsed.scheme and parsed.netloc)
+
+
 def construct_url(scheme='https', netloc='', path='', query_params=None, fragment=''):
     """
     Constructs a URL from its components.
