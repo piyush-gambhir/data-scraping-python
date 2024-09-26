@@ -1,6 +1,6 @@
 # Data-Scraping-Python
 
-This project is designed for scraping data from various websites, especially related to car listings. It uses Python, Selenium, and other web scraping libraries to automate the process of collecting and storing data from different sources.
+This project is designed for scraping data from various websites. It uses Python, Selenium, and other web scraping libraries to automate the process of collecting and storing data from different sources.
 
 ## Project Structure
 
