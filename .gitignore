@@ -1,0 +1,8 @@
+# PyCache
+__pycache__/
+
+# Virtual Environment
+venv/
+
+# ENVIROMENT VARIABLES
+.env
