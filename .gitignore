@@ -6,3 +6,20 @@ venv/
 
 # ENVIROMENT VARIABLES
 .env
+
+# csv files
+*.csv
+
+#json files
+*.json
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# videos
+*.mp4
+*.webm
