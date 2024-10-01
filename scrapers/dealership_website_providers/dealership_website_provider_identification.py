@@ -1,9 +1,9 @@
 import re
 from collections import defaultdict
 
-from helpers.url.url import parse_url
-from helpers.html.fetch_html import fetch_html
-from helpers.html.parse_html import parse_html
+from utils.url.url import parse_url
+from utils.html.fetch_html import fetch_html
+from utils.html.parse_html import parse_html
 
 PROVIDER_LIST = [
     'Dealer.com', 'DealerInspire', 'DealerOn', 'DealerSocket', 'DealerFire',

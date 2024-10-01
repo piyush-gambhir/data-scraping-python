@@ -14,10 +14,17 @@ python = "^3.12"
 pandas = "^2.2.3"
 pyppeteer = "^2.0.0"
 requests = "^2.32.3"
-beautifulsoup4 = "^4.12.3"
+beautifulsoup4 = "^4.12.3"  
 scrapy = "^2.11.2"
 selenium = "^4.25.0"
 lxml = "^5.3.0"
+rich = "^13.8.1"
+ruff = "^0.6.8"
+pydantic = "^2.9.2"
+black = "^24.8.0"
+python-dotenv = "^1.0.1"
+typesense = "^0.21.0"
+boto3 = "^1.35.29"
 
 
 [build-system]
