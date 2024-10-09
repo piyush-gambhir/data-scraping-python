@@ -6,6 +6,7 @@ from helpers.utils.html.fetch_html import fetch_html
 from helpers.utils.html.parse_html import parse_html
 
 
+
 def extract_vin(soup):
     """Extract VIN number from the HTML soup."""
     vin_pattern = re.compile(r'[A-HJ-NPR-Z0-9]{17}')  # Pattern for a 17-character VIN
