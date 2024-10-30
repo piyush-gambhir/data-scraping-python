@@ -1,25 +1,71 @@
-# PyCache
+# Python
 __pycache__/
-
-# Virtual Environment
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
 venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
 
-# ENVIROMENT VARIABLES
+# Environment variables
 .env
+.env.*
 
-# csv files
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Data files
 *.csv
-
-#json files
 *.json
+*.xlsx
+*.xls
 
-# images
+# Media files
 *.png
 *.jpg
 *.jpeg
 *.gif
 *.svg
-
-# videos
 *.mp4
 *.webm
+*.mov
+*.avi
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Miscellaneous
+*.class
+*.pyc
+*.pyo
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
